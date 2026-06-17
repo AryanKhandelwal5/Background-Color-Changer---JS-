@@ -1,0 +1,82 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Full screen center */
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  background: #111;
+  font-family: Arial, sans-serif;
+
+  transition: background 0.4s ease;
+}
+
+/* Container for buttons */
+.container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Common button styles */
+button {
+  width: 90px;
+  height: 90px;
+  border: none;
+  border-radius: 20px;
+
+  cursor: pointer;
+
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+
+  transition: all 0.25s ease;
+
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.3),
+    inset 0 -4px 8px rgba(255, 255, 255, 0.15);
+}
+
+/* Hover effect */
+button:hover {
+  transform: translateY(-8px) scale(1.08);
+
+  box-shadow:
+    0 15px 25px rgba(0, 0, 0, 0.4),
+    0 0 20px rgba(255, 255, 255, 0.25);
+}
+
+/* Click effect */
+button:active {
+  transform: scale(0.95);
+}
+
+/* Individual colors */
+.red {
+  background: #ff4d4d;
+}
+
+.blue {
+  background: #3b82f6;
+}
+
+.green {
+  background: #22c55e;
+}
+
+.yellow {
+  background: #facc15;
+  color: black;
+}
+
+.purple {
+  background: #a855f7;
+}
